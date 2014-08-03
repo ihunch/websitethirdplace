@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="WebsiteTP/Thridplace/js/|WebsiteTP/Thridplace/js/libs/" kind="src" path=""/>
+	<classpathentry excluding="libs/" kind="src" path="WebsiteTP/Thridplace/js"/>
+	<classpathentry kind="src" path="WebsiteTP/Thridplace/js/libs"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

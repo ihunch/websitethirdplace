@@ -37,9 +37,13 @@ input[type="button"]{
 .imageBlock1{
 	background-image: url(images/mg_57711_480x320.png);
 }
-.infoPage{
+.infoPage1{
 	position:absolute;
 	width:100%;
+	height: 100%;
+	background-image: url(images/images/puckered.png);
+	background-position:center;
+	background-size: 100%;
 }
 .imageBlock2{
 	background-image: url(images/mg_5774.png);
@@ -65,13 +69,15 @@ input[type="button"]{
 	height: 50px;
 }
 .mainPage{
+	position:fixed;
+	top:0;
+	left:0;
 	/*display: none;*/
 	background: url(images/slide2.png);
 	background-size: 100% auto;
 	background-position:center;
 	background-repeat: no-repeat;
 	height: 100%;
-	position: absolute;
 	width: 100%;
 	-moz-background-clip: -moz-initial;
 	-moz-background-origin: -moz-initial;

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="jquery.min.js"></script>
+		<script src="index.js"></script>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+		<title>Hunch</title>
+	</head>
+	<body style="margin: 0pt;">
+		<div class="mainPage">
+			<!-- Overlay -->
+			<div class="overlay"></div>
+			<!-- Logo -->
+			<div class="title waitUntilLoaded">
+				<img class="logo" src="images/drawing2.png"> Hunch
+			</div>
+			
+			<!-- description -->
+			<div class="waitUntilLoaded description">
+				<div class="descriptionMain">The next generation social network</div>
+				<div class="descriptionSubtext">Share your treasured moments with the ones that you treasure the most.</div>
+			</div>
+			<div class="hidden thankYou description">
+				<div class="descriptionMain">Thank you for your contribution.</div>
+			</div>
+			<div class="hidden failedSubmit description">
+				<div class="descriptionMain">An error occurred while attempting to submit your request. Please try again later.</div>
+			</div>
+
+			<!-- Input -->
+			<div class="waitUntilLoaded inputs">
+				<div class="inviteText">Request an invitation to test "app_name_here"</div><br/>
+				<form id="emailForm">
+					<input type="text" placeholder="Enter your email" id="emailText"/>
+					<input value="Submit" type="button" id="submit" onclick="addEmail()"/>
+				</form>
+				<div id="invalidEmail">Please enter a valid E-Mail address</div>
+			</div>
+			
+			<!-- Learn More -->
+			<div class="learnMoreContainer">
+				<input type="button" class="waitUntilLoaded learnMore" value="Learn More"/>
+			</div>
+		</div>
+		
+		<div class="infoPage" style="top:100%;">
+			<div class="spacer"></div>
+			<div class="informationContainer">
+				<div class="row1 row">
+					<div class="imageBlock1 imageBlock block"></div>
+					<div class="informationBlock1 informationBlock block">
+						Template information box 1.
+						This should give a brief description of the app, and get people interested in it.
+					</div>
+				</div>
+				<div class="row2 row">
+					<div class="informationBlock2 informationBlock block">
+						Template information box 2.
+						This should give a practical use for the app, and inspire them to use it.					
+					</div>
+					<div class="imageBlock2 imageBlock block"></div>
+				</div>
+				<div class="row3 row">
+					<div class="imageBlock3 imageBlock block"></div>
+					<div class="informationBlock3 informationBlock block">
+						Template information box 3. 
+						This should give people a conclusive statement as well as giving them a reason to
+						enter their email address.
+					</div>
+				</div>
+				<div class="spacer">
+					<input type="button" id="toTop" value="Join Now!"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

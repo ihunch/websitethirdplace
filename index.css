@@ -1,0 +1,140 @@
+/* Include font */
+@font-face {
+    font-family: "ubuntu";
+    src: url(fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf) format("truetype");
+}
+body {
+	font-weight: bold;
+	font-family: ubuntu;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	font-size: 65%;
+}
+p {
+	font-size: 2.2em; 
+}
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 1.8em;
+}
+input[type="button"]{
+	background: #FF3300;
+	color: #EEEEEE;
+	font-weight: bold;
+}
+.waitUntilLoaded{
+	opacity: 0;
+}
+.imageBlock{
+	box-shadow: 0px 30px 40px #555555;
+}
+.informationBlock{
+	padding: 50px;
+}
+.imageBlock1{
+	background-image: url(images/mg_57711_480x320.png);
+}
+.infoPage{
+	position:absolute;
+	width:100%;
+}
+.imageBlock2{
+	background-image: url(images/mg_5774.png);
+}
+.imageBlock3{
+	background-image: url(images/mg_5778.png);
+}
+.block{
+	display: -moz-inline-stack;
+	position: relative;
+	font-size: 2.4em;
+	color: #888888;
+	width: 480px;
+	height: 320px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 25px;
+	background-size: 100% auto;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+.spacer{
+	height: 50px;
+}
+.mainPage{
+	/*display: none;*/
+	background: url(images/slide2.png);
+	background-size: 100% auto;
+	background-position:center;
+	background-repeat: no-repeat;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	-moz-background-clip: -moz-initial;
+	-moz-background-origin: -moz-initial;
+	-moz-background-inline-policy: -moz-initial;
+}
+.title{
+	color: #FFFFFF;
+	font-size: 6em;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	text-align: left;
+}
+.inputs{
+	position: absolute;
+	width: 100%;
+	top: 60%;
+}
+.inviteText{
+	font-size: 2em;
+}
+.hidden{
+	opacity: 0;
+}
+.description{
+	width: 80%;
+	top: 25%;
+	position: absolute;
+	left:10%;
+}
+.descriptionMain{
+	font-size: 3.5em;
+}
+.descriptionSubtext{
+	font-size: 2em;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+.logo{
+	width:50px;
+}
+#invalidEmail{
+	background-color:#FF0000;
+	padding: 20px;
+	margin: 0 auto;
+	opacity: 0;
+	font-size: 1.5em;
+}
+.learnMoreContainer{
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+}
+@media (max-width: 500px) {
+	body{
+		font-size: 50%;
+	}
+}
+@media screen and (max-aspect-ratio: 3/2){
+	.mainPage{
+		background-size: auto 100%;
+	}
+}

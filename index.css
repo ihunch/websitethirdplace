@@ -4,8 +4,7 @@
     src: url(fonts/ubuntu-font-family-0.80/Ubuntu-L.ttf) format("truetype");
 }
 body {
-	font-weight: bold;
-	font-family: ubuntu;
+	font-family: "proxima_nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-align: center;
 	background-size: cover;
 	background-position: center;
@@ -28,28 +27,22 @@ input[type="button"]{
 .waitUntilLoaded{
 	opacity: 0;
 }
-.imageBlock{
-	box-shadow: 0px 30px 40px #555555;
-}
-.informationBlock{
-	padding: 50px;
-}
-.imageBlock1{
-	background-image: url(images/mg_57711_480x320.png);
-}
-.infoPage1{
+.infoPage{
 	position:absolute;
 	width:100%;
 	height: 100%;
-	background-image: url(images/images/puckered.png);
 	background-position:center;
 	background-size: 100%;
+	background-repeat: none;
 }
-.imageBlock2{
-	background-image: url(images/mg_5774.png);
+.infoPage1{
+	background-image: url(images/images/puckered.png);
 }
-.imageBlock3{
-	background-image: url(images/mg_5778.png);
+.infoPage2{
+	background-image: url(images/images/slide3.png);
+}
+.infoPage3{
+	background-image: url(images/images/slide4.png);
 }
 .block{
 	display: -moz-inline-stack;
@@ -85,7 +78,7 @@ input[type="button"]{
 }
 .title{
 	color: #FFFFFF;
-	font-size: 6em;
+	font-size: 3em;
 	position: absolute;
 	top: 25px;
 	left: 25px;
@@ -109,7 +102,7 @@ input[type="button"]{
 	left:10%;
 }
 .descriptionMain{
-	font-size: 3.5em;
+	font-size: 70px;
 }
 .descriptionSubtext{
 	font-size: 2em;
@@ -117,10 +110,11 @@ input[type="button"]{
 .overlay{
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.2);
 }
 .logo{
 	width:50px;
+	opacity: 0.8;
 }
 #invalidEmail{
 	background-color:#FF0000;

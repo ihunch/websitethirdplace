@@ -39,9 +39,25 @@ email-form, .username-form {
 	z-index: 10;
 }
 
+.pageInfo {
+	font-size: 6em;
+	padding: 10px;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+}
+
+.contact {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	font-size: 1.5em;
+	font-width: bold;
+}
+
 input[type="button"]{
 	background: #e7704b;
-    color: white;
+	color: white;
 	font-weight: 600;
 	height: 3.45rem;
 	text-align: center;
@@ -90,12 +106,12 @@ input[type="submit"]{
 }
 .description{
 	width: 100%;
-	top: 15%;
+	top: 25%;
 	position: absolute;
-
 }
 .descriptionMain{
-	font-size: 10em;
+	font-size: 7em;
+	margin: 50px;
 }
 .descriptionSubtext{
 	font-size: 6em;
@@ -109,10 +125,15 @@ input[type="submit"]{
 	width:50px;
 	opacity: 0.8;
 }
+
+.failedSubmit {
+	top: 15%;
+}
+
 #invalidEmail{
 	background-color:#FF0000;
 	padding: 20px;
-	margin: 0 auto;
+	margin: 20px auto;
 	opacity: 0;
 	font-size: 1.5em;
 }

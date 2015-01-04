@@ -21,7 +21,7 @@ $(window).load(function() {
 	});
 	$(".learnMore").bind("click", function() {
 		$("html, body").animate({
-			"scrollTop" : $(".infoPage").offset().top + 1
+			"scrollTop" : $("#slide2").offset().top + 1
 		}, 1000);
 	});
 	$("#toTop").bind("click", function() {

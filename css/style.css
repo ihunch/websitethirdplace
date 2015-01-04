@@ -1,0 +1,57 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For NetTuts+
+ *  
+ * Author: Mohiuddin Parekh
+ *	http://www.mohi.me
+ * 	@mohiuddinparekh   
+ */
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+#slide1 { 
+	background: url(../images/slide1.png) 50% 0 no-repeat fixed; 
+	height: 1000px;
+	 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#slide2 { 
+	background: url(../images/slide2.png) 50% 0 no-repeat fixed; 
+	height: 1000px;
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+/* Introduction */
+
+#slide1 article {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#slide2 article {
+	height: 458px;
+	position: absolute;
+	text-indent: -9999px;
+	top: 291px;
+	width: 100%;
+}
+
+
+
+

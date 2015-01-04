@@ -1,15 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>Third Place</title>
+		
+		<!-- CSS Code -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/index.css">
+
+		<!-- JS Code -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/index.js"></script>
-		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-		<title>Third Place</title>
+		<script src="js/script.js"></script>
 	</head>
-	<body style="margin: 0pt;">
-		<div id="main" role="main">
-			<section id="first" class="story" data-speed="8" data-type="background">    	
+
+	<body>
+		<!-- Section #1 -->
+		<section id="slide1" data-speed="10" data-type="background">
+			<article>
 				<div class="mainPage">
 					<!-- Overlay -->
 					<div class="overlay"></div>
@@ -33,10 +40,10 @@
 					<!-- Input ../images/slide3.png -->
 					<div class="waitUntilLoaded inputs">
 						<div class="inviteText">Request an invitation to Thirdplace</div><br/>
-						<form id="emailForm">
-							<input type="text" placeholder="Enter your email" id="emailText"/>
-							<input value="Go" type="button" id="submit" onclick="addEmail()"/>
-						</form>
+							<form id="emailForm">
+								<input type="text" placeholder="Enter your email" id="emailText"/>
+								<input value="Go" type="button" id="submit" onclick="addEmail()"/>
+							</form>
 						<div id="invalidEmail">Please enter a valid E-Mail address</div>
 					</div>
 					
@@ -46,87 +53,12 @@
 						<img src="images/down4_512px_white.png" style="width:64px;height:64;" class="waitUntilLoaded learnMore"/>
 					</div>
 				</div>
-			</section>
-			
-	<!-- Section #2 / Personal Social Network -->
-	<section id="second" class="story" data-speed="4" data-type="background">
-		<article>
-			<h2>Personal Social Networking</h2>
-		    	<p>Close Friends. Hangouts. Your Social Calender. Cool Places</p>
-		    
-		</article>
-	</section>
-	
-	<!-- Section #3 / Photos -->
-	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
-		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="5%" data-speed="2"></div>
-    	<article>
-			<h2> Close Friends Hangouts </h2>
-			<h2> Share Special Moments </h2>
-    		<h2> Art </h2>
-	    	<div class="textbox">    	
-		    	<p>The next step in your parallax scrolling adventure is to create some sprites!</p>
-		    	
-		    </div>
-    	</article>
-	</section>	
-	
-
-	<!-- Section #4 / HTML5 Video -->
-	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
-    	<article>
-			<h2>Cool Places to hangout</h2>
-    		<h2>Launch Video</h2>
-	    	<div class="textbox">    	
-		    	<p> Introduction Pitch Video </p>
-		    	
-		    </div>
-    	</article>
-		<video controls width="640" width="480" data-type="video" data-offsetY="2400" data-speed="1.5">
-			<source src="video/parallelparking.theora.ogv" type="video/ogg" />
-			<source src="video/parallelparking.mp4" type="video/mp4" />
-			<source src="video/parallelparking.webm" type="video/webm" />
-		</video>
-	</section>	
-
-	<!-- Section #5 / The End-->
-	<section id="theend" class="story" data-speed="4" data-type="background" data-offsetY="250">    	
-		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-1.8">
+			</article>
+		</section>
 		
-			<div>
-		
-		<h3>
-		<for action="#" method="post" class="email-form animated fadeindow">
-		<input type="email" name="email" class="email-input" placeholder="Enter your email : )"
-		</h3>
-		<input type="submit" class"="email-submit">
-					
-			</div>
-		
-		</div>
-		
-		<article>
-			<img src="images/tutorial-title.png" alt="tutorial-title" width="96" height="108" />
-			<p>Copyright Hunch Pty Ltd Australia</p>
-			<p> by Joseph Liu/ Twitter: <a href="http://twitter.com/ihunch" target="_blank">@iHunch</a>/Web: <a href="http://www.i-hunch.com">i-hunch.com</a></p>
-			
-				<div class="message">
-                Contact us @ <a href="info@i-hunch.com">info@i-hunch.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-		</article>
-		
-		
-		</div>	
-		 
-  
-		
-	</section>
-	
-		</div>
+		<!-- Section #2 -->
+		<section id="slide2" data-speed="4" data-type="background">
+			<article>Simple Parallax Scroll</article>
+		</section>
 	</body>
 </html>

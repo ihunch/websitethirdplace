@@ -6,43 +6,71 @@
 body {
 	font-family: "proxima_nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-align: center;
-	background-size: cover;
 	background-position: center;
 	color: white;
 	font-size: 65%;
 }
 p {
-	font-size: 2.2em; 
+	margin-top: 1.625rem;
+height: 3.25rem;
+margin-left: auto;
+margin-right: auto;
+width: 26.75rem;
+position: relative;
+z-index: 10;
 }
+
 input {
-    border: 0;
-    padding: 10px;
-    font-size: 1.8em;
+float: center;
+padding-left: 1.2rem;
+padding-top: 0.1rem;
+padding-right: 1.2rem;
+height: 3.25rem;
+line-height: 3.25rem;
+font-size: 1.2rem;
+font-weight: 300;
+color: #444;
+background: white;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+border: none;
 }
+email-form, .username-form {
+margin-top: 1.625rem;
+height: 3.25rem;
+margin-left: auto;
+margin-right: auto;
+width: 30rem;
+position: relative;
+z-index: 10;
+}
+
 input[type="button"]{
-	background: #FF3300;
-	color: #EEEEEE;
-	font-weight: bold;
-}
+	background: #e7704b;
+    color: white;
+	font-weight: 600;
+	height: 3.45rem;
+	text-align: center;
+	top: 0px;
+	right: 0px;
+	border: none;
+	cursor: pointer;
+	outline: 0;
+	}
+	
 .waitUntilLoaded{
 	opacity: 0;
+	
 }
 .infoPage{
 	position:absolute;
 	width:100%;
 	height: 100%;
-	background-position:center;
-	background-size: 100%;
-	background-repeat: none;
-}
-.infoPage1{
-	background-image: url(images/images/puckered.png);
-}
-.infoPage2{
-	background-image: url(images/images/slide3.png);
-}
-.infoPage3{
-	background-image: url(images/images/slide4.png);
+	background-position:right;
+	background-size: cover;
+	background-repeat: 0;
 }
 .block{
 	display: -moz-inline-stack;
@@ -61,33 +89,18 @@ input[type="button"]{
 .spacer{
 	height: 50px;
 }
-.mainPage{
-	position:fixed;
-	top:0;
-	left:0;
-	/*display: none;*/
-	background: url(images/slide2.png);
-	background-size: 100% auto;
-	background-position:center;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-	-moz-background-clip: -moz-initial;
-	-moz-background-origin: -moz-initial;
-	-moz-background-inline-policy: -moz-initial;
-}
 .title{
 	color: #FFFFFF;
-	font-size: 3em;
+	font-size: 40px;
 	position: absolute;
 	top: 25px;
 	left: 25px;
-	text-align: left;
+	vertical-align: top;
 }
 .inputs{
 	position: absolute;
 	width: 100%;
-	top: 60%;
+	top: 50%;
 }
 .inviteText{
 	font-size: 2em;
@@ -96,16 +109,16 @@ input[type="button"]{
 	opacity: 0;
 }
 .description{
-	width: 80%;
-	top: 25%;
+	width: 100%;
+	top: 15%;
 	position: absolute;
-	left:10%;
+
 }
 .descriptionMain{
-	font-size: 70px;
+	font-size: 100px;
 }
 .descriptionSubtext{
-	font-size: 2em;
+	font-size: 60px;
 }
 .overlay{
 	width: 100%;
@@ -138,3 +151,124 @@ input[type="button"]{
 		background-size: auto 100%;
 	}
 }
+
+/**
+ * Parallax Scrolling
+ * For Hunch Pty Ltd
+ * July 2014
+ *  
+ * 
+ *		   
+ * 		   
+ */
+*{
+	font-family: "proxima_nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.8em;
+}
+article h2 { font-size: 60px; margin: 25px 0; line-height: 1em;}
+
+
+
+.story { 
+	height: 1000px; 
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	margin: 0 auto; 
+	border-top: 0px solid rgba(255,255,255,0.3); 
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+
+input {
+        border: 0;
+    }
+	input[type="submit"]{
+      background: #e7704b;
+      color: white;
+	  font-weight: 600;
+	  height: 3.45rem;
+	  text-align: center;
+	  top: 0px;
+	  right: 0px;
+	border: none;
+		cursor: pointer;
+outline: 0;
+    }
+
+	
+.email-input {
+float: left;
+padding-left: 1.2rem;
+padding-top: 0.1rem;
+width: 23rem;
+height: 3.25rem;
+line-height: 3.25rem;
+font-size: 1.2rem;
+font-weight: 300;
+color: #444;
+background: white;
+border: none;
+}
+
+
+.transbox {background-color: #ffffff; opacity: 1; opacity: alphavalue}
+
+
+.feature-forward {background-color: #fff; opacity: 1; ;width:52px;height:52px;position:absolute;left:50%; top: 55px;margin-left:-26px;cursor:pointer;z-index:10;background-repeat:no-repeat;background-position:center center;background-image:url('http://img03.mifile.cn/webfile/images/2014/cn/goods/mi4/ma/fea-24_2x.png');background-size:52px}
+
+#first { width:100% ;alignment-baseline: after-edge;; background: url(images/images/slide2.png) 100% 0 no-repeat fixed; }
+#second { background: url(images/images/puckered.png) 40% 0 no-repeat fixed; }
+#fourth { background: url(images/images/slide3.png) 100% 0 no-repeat fixed; }
+#third { background: url(images/images/slide4.png) 100% 0 no-repeat fixed; }
+#theend { background: url(images/images/slide2.png) 50% bottom no-repeat fixed; }
+
+/* Introduction */
+#first .smashinglogo { background: 50% 100px no-repeat fixed; min-height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; opacity: .9; }
+#first article { position: absolute;width: 200%; top: 30px; color: #000; width: 620px; margin-left: 30px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; border: 1px solid rgba(150,150,150,0.1);}
+#first article a { color: #FFF;}
+#first h3 { 
+		
+		text-align: center;
+		margin-left: 39.5%;
+				position: absolute;
+				top: 500px;
+		color: white;
+      font-family: helvetica;
+	  font-size: larger;
+	  }
+	  
+	
+
+
+/* Personal Network*/
+#second { padding: 50px 0;}
+#second article { background-color: #fff; opacity: .7; opacity: alphavalue=40; color: #000; width: 445px; margin-left: 100px; padding: 10px 20px; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#second article p { margin-bottom: 25px; }
+#second article a { color: #ff0;}
+
+/* Photograph */
+#third article {  background-color: #fff; opacity: .6; padding: 10px 20px; margin: 100px 0 0 60%; text-shadow: 0 -1px 0 rgba(0,0,0,0.5); line-height: 1.5em; color: #000; position: absolute; top: 0; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#third .photograph { background: url(../images/photo.png) transparent 60% 100px no-repeat fixed; min-height: 1000px; padding: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#third article p { width: 400px; margin-bottom: 25px; }
+#third .photo {margin-left: 30px;}
+
+/* The End */
+#theend .byebye { background: url(../images/theend.png) 40% 100px no-repeat fixed; height: 1000px; padding: 0; margin: 0; width: 100%; max-width: 1920px; position: relative; margin: 0 auto; }
+#theend article { position: absolute; bottom: 0; left: 0;background-color: #fff; opacity: .9; width: 445px; margin-left: 100px; padding: 10px 20px; line-height: 1.5em; box-shadow: 0 0 25px rgba(0,0,0,0.3); border: 1px solid rgba(150,150,150,0.1); }
+#theend article p { margin-bottom: 25px; }
+#theend article a { color: #000;}
+#theend h3 { 
+		
+		text-align: center;
+		margin-left: 39.5%;
+				position: absolute;
+				top: 600px;
+		color: white;
+      font-family: helvetica;
+	  font-size: larger;
+	  }
+	  
+
+

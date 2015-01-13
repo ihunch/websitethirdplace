@@ -15,20 +15,42 @@
 
 	<body>
 		<!-- Section #1 -->
-		<section id="slide1" data-speed="0" data-type="background">
+		<section id="slide1" data-speed="4" data-type="background">
 			<article>
 				<div class="mainPage">
 					<!-- Overlay -->
 					<div class="overlay"></div>
 					<!-- Logo -->
 					<div class="title waitUntilLoaded" style="vertical-align: center;">
-						<img class="logo" src="images/logo.png"> Thirdplace
+						<img class="logo" src="images/logo.png"> thirdplace
+					</div>
+					
+					<div class="appStore waitUntilLoaded" style="vertical-align: c;">
+						<img src="images/appStore.png" style="width:400px">
 					</div>
 					
 					<!-- description -->
 					<div class="waitUntilLoaded description">
-						<div class="descriptionMain">Friends Hangout</div>
-						<div class="descriptionSubtext">@thirdplace</div>
+						<div class="descriptionMain">Friends Hangout @thirdplace</div>
+						<div class="descriptionSubtext">Find a time and place for you and your best friends</div>
+					</div>
+					<div class="inputs">
+						<div class="hidden thankYou description1">
+							<div class="descriptionMain">Congratulations for getting thirdplace! Well done!</div>
+						</div>
+						<div class="hidden failedSubmit description1">
+							<div class="descriptionMain">Oops, we stuffed up... try again later.</div>
+						</div>
+			
+						<!-- Input ../images/slide3.png -->
+						<div class="waitUntilLoaded inputs">
+							<div class="inviteText">Request an invitation</div><br/>
+								<form id="emailForm">
+									<input type="text" placeholder="Enter your email" id="emailText"/>
+									<input value="Go" type="button" id="submit" onclick="addEmail()"/>
+								</form>
+							<div id="invalidEmail">Please enter a valid E-Mail address</div>
+						</div>
 					</div>
 					
 					<!-- Learn More -->
@@ -41,42 +63,35 @@
 		</section>
 		
 		<!-- Section #2 -->
-		<section id="slide2" data-speed="4" data-type="background">
+		<section id="slide2" data-speed="8" data-type="background">
 			<article>
 				<div class="pageInfo">
 					Personal Social Networking<br/><br/>
 					Close Friends. Hangouts. Your Social Calender. Cool Places
-				</div>
-				<img src="images/smashing-logo.png"/>
-			</article>
-		</section>
-		<section id="slide3" data-speed="6" data-type="background">
-			<article>
-				<div class="pageInfo">
 					Close Friends Hangouts<br/><br/>
 					Share Special Moments
 				</div>
-				<img src="images/photo.png" width="300"/>
+				<img id="page3Image" src="images/photo.png"/>
 			</article>
 		</section>
-		<section id="slide4" data-speed="8" data-type="background">
+		<section id="slide3" data-speed="12" data-type="background">
 			<article>
-				<div class="pageInfo">Cool Places to hangout</div>
+				<div class="pageInfo">Cool Places</div>
 			</article>
 		</section>
-		<section id="slide5" data-speed="0" data-type="background">
+		<section id="slide4" data-speed="16" data-type="background">
 
 			<div>
 				<div class="hidden thankYou description">
-					<div class="descriptionMain">We will contact you shortly.</div>
+					<div class="descriptionMain">Congratulations for getting thirdplace! Well done!</div>
 				</div>
 				<div class="hidden failedSubmit description">
-					<div class="descriptionMain">An error occurred while attempting to submit your request. Please try again later.</div>
+							<div class="descriptionMain">Oops, we stuffed up... try again later.</div>
 				</div>
 	
 				<!-- Input ../images/slide3.png -->
 				<div class="waitUntilLoaded inputs">
-					<div class="inviteText">Request an invitation to Thirdplace</div><br/>
+					<div class="inviteText">Request an invitation to thirdplace</div><br/>
 						<form id="emailForm">
 							<input type="text" placeholder="Enter your email" id="emailText"/>
 							<input value="Go" type="button" id="submit" onclick="addEmail()"/>

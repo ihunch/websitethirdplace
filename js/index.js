@@ -52,27 +52,28 @@ var addEmail = function() {
 		$("#submit").val("Submitting...").attr("onclick", "");
 		/*
 		 * This code will be used when we have a server to post requests on to.
-		 * 
-		 * $.ajax({ "url": "insert server address here", "type": "post", "data": {
-		 * "email": x }, "timeout": 5000, "success": function(){
-		 * $("#submit").val("Submit").attr("onclick", "addEmail()");
-		 * $("#emailText").val(""); $(".description").animate({"opacity":
-		 * "0"},500); $(".thankYou").animate({"opacity": "1"},500); }, "error":
-		 * function(){ $("#submit").val("Submit").attr("onclick", "addEmail()");
-		 * $(".description").animate({"opacity": "0"},500);
-		 * $(".failedSubmit").animate({"opacity": "1"},500); } });
 		 */
-		/* Temp output */
-		setTimeout(function() {
+		$.ajax({
+			"url": "http://jitb.tk/websitethirdplace/email.php",
+			"type": "post",
+		    "dataType": 'json',
+			"data": {
+				"email": x
+			},
+		}).done(function(){
 			$("#submit").val("Submit").attr("onclick", "addEmail()");
 			$("#emailText").val("");
 			$(".description").animate({
-				"opacity" : "0"
-			}, 500);
-			$(".thankYou").animate({
-				"opacity" : "1"
-			}, 500);
-		}, 3000);
+				"opacity": "0"
+			},500);
+			$(".thankYou").animate({"opacity": "1"},500);
+		}).fail(function(){
+			console.log("error");
+			$("#submit").val("Submit").attr("onclick", "addEmail()");
+			$(".description").animate({"opacity": "0"},500);
+			$(".failedSubmit").animate({"opacity": "1"},500);
+		});
+		/* Temp output */
 
 	}
 };

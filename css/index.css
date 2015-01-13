@@ -45,7 +45,16 @@ email-form, .username-form {
 	padding: 10px;
 	position: absolute;
 	top: 40%;
-	width: 100%;
+	width: 50%;
+	left: 40%;
+}
+
+#page3Image {
+	top: 40%;
+	left: 10%;
+	position: absolute;
+	box-shadow: 5px 5px 5px #222;
+	height: 20%;
 }
 
 .contact {
@@ -94,20 +103,28 @@ input[type="submit"]{
 	left: 25px;
 	vertical-align: top;
 }
+.appStore{
+	color: #FFFFFF;
+	font-size: 4em;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	vertical-align: top;
+}
 .inputs{
 	position: absolute;
 	width: 100%;
 	top: 40%;
 }
 .inviteText{
-	font-size: 5em;
+	font-size: 3em;
 }
 .hidden{
 	opacity: 0;
 }
 .description{
 	width: 100%;
-	top: 25%;
+	top: 20%;
 	position: absolute;
 }
 .descriptionMain{
@@ -115,7 +132,7 @@ input[type="submit"]{
 	margin: 50px;
 }
 .descriptionSubtext{
-	font-size: 6em;
+	font-size: 3em;
 }
 .overlay{
 	width: 100%;
@@ -128,7 +145,9 @@ input[type="submit"]{
 }
 
 .failedSubmit {
-	top: 15%;
+	top: 75%;
+	width: 100%;
+	position: absolute;
 }
 
 #invalidEmail{
@@ -140,7 +159,7 @@ input[type="submit"]{
 }
 .learnMoreContainer{
 	position: absolute;
-	bottom: 25px;
+	top: 65%;
 	width: 100%;
 }
 @media (max-width: 500px) {
@@ -209,15 +228,12 @@ border: none;
 	background: url(images/images/slide2.png) 100% 0 no-repeat fixed;
 }
 #second {
-	background: url(images/images/puckered.png) 40% 0 no-repeat fixed;
-}
-#fourth { 
-	background: url(images/images/slide3.png) 100% 0 no-repeat fixed;
-}
-#third { 
 	background: url(images/images/slide4.png) 100% 0 no-repeat fixed;
 }
-#theend { 
-	background: url(images/images/slide2.png) 50% bottom no-repeat fixed; 
+#third { 
+	background: url(images/images/slide3.png) 100% 0 no-repeat fixed;
+}
+#forth { 
+	background: url(images/images/puckered.png) 40% 0 no-repeat fixed;
 }
 
